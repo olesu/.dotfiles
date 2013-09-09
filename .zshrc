@@ -44,6 +44,7 @@ plugins=(git brew colorize gem git-extras github gnu-utils mvn node npm osx pyth
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/etc/profile.d/colorsvn-env.sh
+source ~/.dotfiles/zsh/functions.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
