@@ -19,3 +19,18 @@
 [submodule ".vim/bundle/ruby"]
 	path = .vim/bundle/ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule ".vim/bundle/ctags"]
+	path = .vim/bundle/ctags
+	url = https://github.com/tpope/gem-ctags.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule ".vim/bundle/bundler"]
+	path = .vim/bundle/bundler
+	url = https://github.com/tpope/vim-bundler.git
+[submodule ".vim/bundle/rake"]
+	path = .vim/bundle/rake
+	url = https://github.com/tpope/vim-rake.git
+[submodule ".vim/bundle/rspec"]
+	path = .vim/bundle/rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
