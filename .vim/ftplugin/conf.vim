@@ -1,0 +1,3 @@
+" Options {{{
+setlocal nowrap
+" }}}
