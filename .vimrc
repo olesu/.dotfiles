@@ -12,6 +12,7 @@ syntax on
 filetype plugin indent on
 set backspace=indent,eol,start
 set omnifunc=syntaxcomplete#Complete
+set visualbell
 " }}}
 
 " Statusline {{{
@@ -31,6 +32,7 @@ let maplocalleader = "_"
 
 nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <Leader>sv :source $MYVIMRC<cr>
+nnoremap <Leader>nt :NERDTreeToggle<cr>
 " }}}
 
 " set cmdheight to avoid "hit enter" prompts {{{
