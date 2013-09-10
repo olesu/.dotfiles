@@ -13,6 +13,7 @@ filetype plugin indent on
 set backspace=indent,eol,start
 set omnifunc=syntaxcomplete#Complete
 set visualbell
+set hlsearch
 " }}}
 
 " Statusline {{{
@@ -27,12 +28,14 @@ set statusline+=%5l/%-3c	" line number/column number
 " }}}
 
 " Keybindings {{{
-let mapleader = "-"
-let maplocalleader = "_"
+let mapleader = ","
+let maplocalleader = ";"
 
 nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <Leader>sv :source $MYVIMRC<cr>
 nnoremap <Leader>nt :NERDTreeToggle<cr>
+
+inoremap jj <Esc>
 " }}}
 
 " set cmdheight to avoid "hit enter" prompts {{{
