@@ -43,8 +43,10 @@ ZSH_THEME="muse"
 plugins=(git brew colorize gem git-extras github gnu-utils mvn node npm osx python rbenv ruby svn tmux vagrant)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/etc/profile.d/colorsvn-env.sh
+COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
+[[ -f $COLORSVN_ENV ]] && source $COLORSVN_ENV
 source ~/.dotfiles/zsh/functions.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
