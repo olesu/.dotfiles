@@ -3,8 +3,7 @@ execute pathogen#infect()
 
 " Colors {{{
 set background=dark
-let g:solarized_termtrans = 1
-colorscheme solarized
+colorscheme vividchalk
 " }}}
 
 " Generally useful settings {{{
@@ -26,21 +25,23 @@ set statusline+=%1*Buf\ #%-n%0*	" buffer number
 set statusline+=%5l/%-3c	" line number/column number
 " }}}
 
+" Keybindings {{{
 let mapleader = "-"
 let maplocalleader = "_"
 
-" Keybindings {{{
 nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <Leader>sv :source $MYVIMRC<cr>
 " }}}
 
-" set cmdheight to avoid "hit enter" prompts
+" set cmdheight to avoid "hit enter" prompts {{{
 set cmdheight=2
 " }}}
 
+" FileType autocmds {{{
 autocmd FileType html,xhtml setl omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css setl omnifunc=csscomplete#CompleteCSS
 autocmd FileType js setl omnifunc=javascriptcomplete#CompleteJS
+" }}}
 
 redraw
 echom "VIM initialization done."
