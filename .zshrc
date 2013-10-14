@@ -45,7 +45,7 @@ plugins=(git brew colorize gem git-extras github gnu-utils mvn node npm osx pyth
 whence tmux > /dev/null 2>&1
 [[ $? -eq 0 ]] && plugins+=(tmux)
 
-export LANG=no_NO.utf-8
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 source $ZSH/oh-my-zsh.sh
 COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
@@ -53,5 +53,5 @@ COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
 source ~/.dotfiles/zsh/functions.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
