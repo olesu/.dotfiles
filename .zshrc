@@ -11,6 +11,10 @@ ZSH_THEME="bira"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='gls -G --color'
+alias mvnc='mvn clean'
+alias mvnci='mvn clean install'
+alias mvni='mvn install'
+alias mvnp='mvn package'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -55,4 +59,9 @@ source ~/.dotfiles/zsh/functions.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+#
+# XCode 5 hides these away:
+export C_INCLUDE_PATH="$(xcrun --show-sdk-path)/usr/include"
+export CPLUS_INCLUDE_PATH="$(xcrun --show-sdk-path)/usr/include"
+export LIBRARY_PATH="$(xcrun --show-sdk-path)/usr/lib:$(xcrun --show-sdk-path)/usr/lib/system:$LIBRARY_PATH"
 
