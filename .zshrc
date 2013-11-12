@@ -53,5 +53,5 @@ COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
 source ~/.dotfiles/zsh/functions.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
