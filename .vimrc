@@ -34,6 +34,7 @@ let maplocalleader = ";"
 nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <Leader>sv :source $MYVIMRC<cr>
 nnoremap <Leader>nt :NERDTreeToggle<cr>
+nnoremap <Leader>cd :cd %:p:h<cr>
 
 inoremap jj <Esc>
 " }}}
