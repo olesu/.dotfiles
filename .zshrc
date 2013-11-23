@@ -15,6 +15,7 @@ alias mvnc='mvn clean'
 alias mvnci='mvn clean install'
 alias mvni='mvn install'
 alias mvnp='mvn package'
+alias mvim='open -a /usr/local/Cellar/macvim/7.4-70/MacVim.app'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -55,10 +56,13 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 source $ZSH/oh-my-zsh.sh
 COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
 [[ -f $COLORSVN_ENV ]] && source $COLORSVN_ENV
+
 source ~/.dotfiles/zsh/functions.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+add_npm_bin_to_path
+
 #
 # XCode 5 hides these away:
 export C_INCLUDE_PATH="$(xcrun --show-sdk-path)/usr/include"
