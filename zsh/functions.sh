@@ -15,4 +15,6 @@ add_npm_bin_to_path () {
     fi
 }
 
-
+mvn() {
+    env MAVEN_OPTS="-Xmx1024m -Xms512m -XX:MaxPermSize=256m" mvn $*
+}
