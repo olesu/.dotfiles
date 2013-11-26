@@ -15,7 +15,8 @@ alias mvnc='mvn clean'
 alias mvnci='mvn clean install'
 alias mvni='mvn install'
 alias mvnp='mvn package'
-alias mvim='open -a /usr/local/Cellar/macvim/7.4-70/MacVim.app'
+alias mvim='open -a MacVim'
+alias intellij='open -a "IntelliJ IDEA 12"'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
