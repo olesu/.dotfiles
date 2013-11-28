@@ -10,12 +10,10 @@ ZSH_THEME="bira"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls='gls -G --color'
 alias mvnc='mvn clean'
 alias mvnci='mvn clean install'
 alias mvni='mvn install'
 alias mvnp='mvn package'
-alias mvim='open -a MacVim'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -51,21 +49,14 @@ plugins=(git brew colorize gem git-extras github gnu-utils mvn node npm osx pyth
 whence tmux > /dev/null 2>&1
 [[ $? -eq 0 ]] && plugins+=(tmux)
 
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 source $ZSH/oh-my-zsh.sh
 COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
 [[ -f $COLORSVN_ENV ]] && source $COLORSVN_ENV
 
 source ~/.dotfiles/zsh/functions.sh
+[[ -f ~/.dotfiles/zsh/`uname`.sh ]] && source ~/.dotfiles/zsh/`uname`.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 add_npm_bin_to_path
-
-#
-# XCode 5 hides these away:
-export C_INCLUDE_PATH="$(xcrun --show-sdk-path)/usr/include"
-export CPLUS_INCLUDE_PATH="$(xcrun --show-sdk-path)/usr/include"
-export LIBRARY_PATH="$(xcrun --show-sdk-path)/usr/lib:$(xcrun --show-sdk-path)/usr/lib/system:$LIBRARY_PATH"
 
