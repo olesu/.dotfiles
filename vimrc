@@ -28,6 +28,8 @@ inoremap jj <Esc>
 autocmd FileType html,xhtml setl omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css setl omnifunc=csscomplete#CompleteCSS
 autocmd FileType js setl omnifunc=javascriptcomplete#CompleteJS
+
+autocmd FileType vim setl foldmethod=marker
 " }}}
 
 
