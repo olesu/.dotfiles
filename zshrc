@@ -15,6 +15,8 @@ alias mvnci='mvn clean install'
 alias mvni='mvn install'
 alias mvnp='mvn package'
 
+alias be='bundle exec'
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
