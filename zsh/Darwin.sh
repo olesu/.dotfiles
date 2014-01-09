@@ -23,3 +23,7 @@ if [ -x "`whence -p tmux`" ]; then
     alias tmux='TERM=screen-256color-bce tmux'
 fi
 
+if [ -d "/usr/local/share/npm/bin" ]; then
+    PATH=/usr/local/share/npm/bin:$PATH
+fi
+
