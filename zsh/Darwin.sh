@@ -23,3 +23,7 @@ if [ -x "`whence -p tmux`" ]; then
     alias tmux='TERM=screen-256color-bce tmux'
 fi
 
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/helpfiles
+
