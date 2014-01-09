@@ -9,7 +9,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 alias mvim='open -a MacVim'
 
 export LC_ALL="no_NO.UTF-8"
-export LANG="no_NO.UTF-8"
+export LANG=$LC_ALL
 
 if [ -x "`whence -p brew`" ]; then
     alias ls='gls --color=auto'
@@ -26,4 +26,7 @@ fi
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
+if [ -d "/usr/local/share/npm/bin" ]; then
+    PATH=/usr/local/share/npm/bin:$PATH
+fi
 
