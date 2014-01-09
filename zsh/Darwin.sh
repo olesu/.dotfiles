@@ -9,7 +9,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 alias mvim='open -a MacVim'
 
 export LC_ALL="no_NO.UTF-8"
-export LANG="no_NO.UTF-8"
+export LANG=$LC_ALL
 
 if [ -x "`whence -p brew`" ]; then
     alias ls='gls --color=auto'
