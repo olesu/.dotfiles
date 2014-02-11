@@ -51,7 +51,7 @@ source ~/.dotfiles/zsh/functions.sh
 [[ -f ~/.dotfiles/zsh/`uname`.sh ]] && source ~/.dotfiles/zsh/`uname`.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 add_npm_bin_to_path
 
 

@@ -23,6 +23,9 @@ if [ -x "`whence -p tmux`" ]; then
     alias tmux='TERM=screen-256color-bce tmux'
 fi
 
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/helpfiles
 if [ -d "/usr/local/share/npm/bin" ]; then
     PATH=/usr/local/share/npm/bin:$PATH
 fi
