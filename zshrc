@@ -7,14 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bira"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias mvnc='mvn clean'
-alias mvnci='mvn clean install'
-alias mvni='mvn install'
-alias mvnp='mvn package'
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -54,6 +46,7 @@ COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
 [[ -f $COLORSVN_ENV ]] && source $COLORSVN_ENV
 
 source ~/.dotfiles/zsh/bundler.zsh
+source ~/.dotfiles/zsh/aliases.zsh
 source ~/.dotfiles/zsh/functions.sh
 [[ -f ~/.dotfiles/zsh/`uname`.sh ]] && source ~/.dotfiles/zsh/`uname`.sh
 
