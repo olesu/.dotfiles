@@ -46,7 +46,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew colorize gem git-extras github gnu-utils mvn node npm osx python rbenv ruby svn vagrant)
+plugins=(git brew colorize gem git-extras github gnu-utils mvn node npm osx python rbenv ruby bundler svn vagrant)
 
 whence tmux > /dev/null 2>&1
 [[ $? -eq 0 ]] && plugins+=(tmux)
