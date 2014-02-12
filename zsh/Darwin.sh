@@ -30,3 +30,15 @@ if [ -d "/usr/local/share/npm/bin" ]; then
     PATH=/usr/local/share/npm/bin:$PATH
 fi
 
+active_if() {
+    if=`route get 0.0.0.0 2>/dev/null | awk '/interface: / {print $2}'`
+    case $if in 
+        en3)
+            echo -n "Thunderbolt Display "
+            ;;
+        en0)
+            echo -n "Wireless "
+    esac
+    echo "($if)"
+}
+
