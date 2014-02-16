@@ -13,8 +13,7 @@ export LANG=$LC_ALL
 
 if [ -x "`whence -p brew`" ]; then
     alias ls='gls --color=auto'
-    alias head='ghead'
-    alias tail='gtail'
+    alias head='ghead' alias tail='gtail'
     alias basename='gbasename'
     alias dirname='gdirname'
 fi
