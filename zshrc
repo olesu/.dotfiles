@@ -38,9 +38,6 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git brew colorize gem git-extras github gnu-utils mvn node npm osx python rbenv ruby bundler svn vagrant)
 
-whence tmux > /dev/null 2>&1
-[[ $? -eq 0 ]] && plugins+=(tmux)
-
 source $ZSH/oh-my-zsh.sh
 COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
 [[ -f $COLORSVN_ENV ]] && source $COLORSVN_ENV
@@ -56,6 +53,6 @@ add_npm_bin_to_path
 
 PAGER=most
 
-
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/vsasoks/.gvm/bin/gvm-init.sh" ]] && source "/Users/vsasoks/.gvm/bin/gvm-init.sh"
+
