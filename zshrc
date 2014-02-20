@@ -53,6 +53,8 @@ add_npm_bin_to_path
 
 PAGER=most
 
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/vsasoks/.gvm/bin/gvm-init.sh" ]] && source "/Users/vsasoks/.gvm/bin/gvm-init.sh"
 
