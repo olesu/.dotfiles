@@ -16,5 +16,11 @@ add_npm_bin_to_path () {
 }
 
 mvn() {
-    env MAVEN_OPTS="-Xmx1024m -Xms512m -XX:MaxPermSize=256m" mvn $*
+    JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk/Contents/Home"
+    if [ "$1" = "-6" ]; then
+        shift
+        JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home";
+    fi
+
+    env JAVA_HOME="$JAVA_HOME" MAVEN_OPTS="-Xmx1024m -Xms512m -XX:MaxPermSize=256m" mvn $*
 }
