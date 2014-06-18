@@ -36,7 +36,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew colorize gem git-extras github gnu-utils mvn node npm osx python rbenv ruby bundler svn vagrant)
+plugins=(vi-mode git brew colorize gem git-extras github gnu-utils mvn node npm osx python rbenv ruby bundler svn vagrant)
 
 source $ZSH/oh-my-zsh.sh
 COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
@@ -54,6 +54,10 @@ add_npm_bin_to_path
 PAGER=most
 
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# NVM (Node Version Manager
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/vsasoks/.gvm/bin/gvm-init.sh" ]] && source "/Users/vsasoks/.gvm/bin/gvm-init.sh"
