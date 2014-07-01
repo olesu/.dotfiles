@@ -55,9 +55,8 @@ PAGER=most
 
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-# NVM (Node Version Manager
-export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/vsasoks/.gvm/bin/gvm-init.sh" ]] && source "/Users/vsasoks/.gvm/bin/gvm-init.sh"
