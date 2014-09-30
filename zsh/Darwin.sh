@@ -4,7 +4,7 @@ export C_INCLUDE_PATH="$(xcrun --show-sdk-path)/usr/include"
 export CPLUS_INCLUDE_PATH="$(xcrun --show-sdk-path)/usr/include"
 export LIBRARY_PATH="$(xcrun --show-sdk-path)/usr/lib:$(xcrun --show-sdk-path)/usr/lib/system:$LIBRARY_PATH"
 
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 alias mvim='open -a MacVim'
 
