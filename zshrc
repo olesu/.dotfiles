@@ -51,7 +51,9 @@ source ~/.dotfiles/zsh/functions.sh
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 add_npm_bin_to_path
 
-PAGER=view
+PAGER=vimpager
+alias less=$PAGER
+alias zless=$PAGER
 
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
