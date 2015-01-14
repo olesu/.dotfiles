@@ -23,8 +23,12 @@ mvn() {
             version='1.6'
             shift
             ;;
-        *)
+        "-7")
             version='1.7'
+            shift
+            ;;
+        *)
+            version='1.8'
             ;;
     esac
 
