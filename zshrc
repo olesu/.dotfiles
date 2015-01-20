@@ -36,7 +36,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vi-mode git brew tmux docker gem git-extras github gnu-utils mvn node npm osx python rbenv ruby bundler svn vagrant)
+plugins=(vi-mode git brew tmux docker gem git-extras github gnu-utils mvn node npm osx python rbenv ruby bundler svn vagrant tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 COLORSVN_ENV=/usr/local/etc/profile.d/colorsvn-env.sh
