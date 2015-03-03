@@ -16,7 +16,7 @@ endfunction
 
 echo "Welcome to Vim!"
 
-if IsMissing("~/.vim/bundle/sensible")
+if IsMissing("~/.vim/bundle/vim-sensible")
 	call CloneSensible()
 endif
 
