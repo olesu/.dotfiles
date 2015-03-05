@@ -15,12 +15,12 @@ function! DownloadPathogenIfMissing()
     endif
 endfunction
 
-function! ClonePlugin(plugin, url) 
+function! ClonePlugin(plugin, url)
     echom "cloning " . a:plugin . " plugin into bundle directory"
     call system("cd " . $HOME . "/.vim/bundle && git clone " . a:url)
 endfunction
 
-function! ClonePluginIfMissing(plugin, url) 
+function! ClonePluginIfMissing(plugin, url)
     if IsMissing("~/.vim/bundle/" . a:plugin)
 	call ClonePlugin(a:plugin, a:url)
     endif
@@ -37,6 +37,7 @@ echo "Welcome to Vim!"
 call EnsureBundleDirectoryExists()
 call ClonePluginIfMissing("vim-sensible", "git@github.com:olesu/vim-sensible.git")
 call ClonePluginIfMissing("vim-vividchalk", "git://github.com/tpope/vim-vividchalk.git")
+call ClonePluginIfMissing("vim-airline", "git@github.com:bling/vim-airline.git")
 call DownloadPathogenIfMissing()
 
 execute pathogen#infect()
