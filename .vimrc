@@ -35,9 +35,8 @@ endfunction
 echo "Welcome to Vim!"
 
 call EnsureBundleDirectoryExists()
-call ClonePluginIfMissing("vim-sensible", "git://github.com/tpope/vim-sensible.git")
+call ClonePluginIfMissing("vim-sensible", "git@github.com:olesu/vim-sensible.git")
 call ClonePluginIfMissing("vim-vividchalk", "git://github.com/tpope/vim-vividchalk.git")
-call ClonePluginIfMissing("vim-makes-sense-to-me", "git@github.com:olesu/vim-makes-sense-to-me.git")
 call DownloadPathogenIfMissing()
 
 execute pathogen#infect()
