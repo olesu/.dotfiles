@@ -45,7 +45,7 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew osx vi-mode java) 
+plugins=(git brew osx vi-mode java mvn) 
 
 # User configuration
 
