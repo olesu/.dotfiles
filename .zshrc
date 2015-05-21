@@ -45,7 +45,7 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew osx vi-mode java remoteshells virtualenv boot2docker)
+plugins=(git brew osx vi-mode java remoteshells virtualenv boot2docker vim-interaction)
 
 # User configuration
 
@@ -78,3 +78,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export MAVEN_OPTS="\
+    -Djava.net.preferIPv4Stack=false\
+    -XX:NewSize=256m -XX:MaxNewSize=256m\
+    -XX:+DisableExplicitGC\
+    -XX:+UseConcMarkSweepGC\
+    "
+
+
