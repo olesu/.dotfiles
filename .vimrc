@@ -39,6 +39,7 @@ call ClonePluginIfMissing("vim-sensible", "git@github.com:olesu/vim-sensible.git
 call ClonePluginIfMissing("vim-vividchalk", "git://github.com/tpope/vim-vividchalk.git")
 call ClonePluginIfMissing("vim-airline", "git@github.com:bling/vim-airline.git")
 call ClonePluginIfMissing("vim-fugitive", "git@github.com:tpope/vim-fugitive.git")
+call ClonePluginIfMissing("vim-livedown", "git@github.com:shime/vim-livedown.git")
 call DownloadPathogenIfMissing()
 
 execute pathogen#infect()
