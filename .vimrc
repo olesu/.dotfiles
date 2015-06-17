@@ -35,10 +35,12 @@ endfunction
 echo "Welcome to Vim!"
 
 call EnsureBundleDirectoryExists()
-call ClonePluginIfMissing("vim-sensible", "git@github.com:olesu/vim-sensible.git")
+call ClonePluginIfMissing("vim-sensible", "git://github.com/tpope/vim-sensible.git")
 call ClonePluginIfMissing("vim-vividchalk", "git://github.com/tpope/vim-vividchalk.git")
 call ClonePluginIfMissing("vim-airline", "git@github.com:bling/vim-airline.git")
 call ClonePluginIfMissing("vim-fugitive", "git@github.com:tpope/vim-fugitive.git")
+call ClonePluginIfMissing("nerdtree", "https://github.com/scrooloose/nerdtree.git")
+call ClonePluginIfMissing("vim-options", "git@github.com:olesu/vim-options.git")
 call DownloadPathogenIfMissing()
 
 execute pathogen#infect()
