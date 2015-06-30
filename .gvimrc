@@ -1,3 +1,3 @@
-set guifont=Menlo:h12
+set guifont=Menlo:h14
 colorscheme vividchalk
 
