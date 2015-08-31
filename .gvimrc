@@ -3,7 +3,9 @@ if has("gui_macvim")
 endif
 colorscheme vividchalk
 
-if has("unix") && has("gui")
-    set toolbar-=T  " Remove toolbar
+if has("gui") && has("unix")
+    set guioptions-=T  " Remove toolbar
+    set columns=132
+    set lines=60
 endif
 
