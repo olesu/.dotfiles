@@ -43,6 +43,7 @@ call ClonePluginIfMissing("vim-livedown", "git@github.com:shime/vim-livedown.git
 call ClonePluginIfMissing("Dockerfile.vim", "https://github.com/ekalinin/Dockerfile.vim.git")
 call ClonePluginIfMissing("vim-options", "git@github.com:olesu/vim-options.git")
 call ClonePluginIfMissing("vim-keymap", "git@github.com:olesu/vim-keymap.git")
+call ClonePluginIfMissing("editorconfig-vim", "https://github.com/editorconfig/editorconfig-vim.git")
 call DownloadPathogenIfMissing()
 
 execute pathogen#infect()
