@@ -1,19 +1,20 @@
 [core]
-    excludesfile = /Users/vsasoks/.gitignore_global
+	excludesfile = /Users/vsasoks/.gitignore_global
     editor = vim
+	autocrlf = input
 [difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-    cmd = /opt/homebrew-cask/Caskroom/sourcetree/1.9.8/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/1.9.8/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [filter "hawser"]
     clean = git hawser clean %f
     smudge = git hawser smudge %f
     required = true
 [user]
-    name = Ole Kristian Sunde
-    email = ole.kristian.sunde@vps.no
+	name = Ole Kristian Sunde
+	email = ole.kristian.sunde@vps.no
     signingkey = 3267541B
 [push]
     default = simple

@@ -35,7 +35,7 @@ endfunction
 call EnsureBundleDirectoryExists()
 call ClonePluginIfMissing("vim-sensible", "git://github.com/tpope/vim-sensible.git")
 call ClonePluginIfMissing("vim-vividchalk", "git://github.com/tpope/vim-vividchalk.git")
-call ClonePluginIfMissing("vim-airline", "git@github.com:bling/vim-airline.git")
+call ClonePluginIfMissing("vim-colors-solarized", "https://github.com/altercation/vim-colors-solarized.git")
 call ClonePluginIfMissing("vim-fugitive", "git@github.com:tpope/vim-fugitive.git")
 call ClonePluginIfMissing("supertab", "https://github.com/ervandew/supertab.git")
 call ClonePluginIfMissing("nerdtree", "https://github.com/scrooloose/nerdtree.git")
@@ -51,5 +51,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-let g:airline#extensions#tabline#enabled = 1
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 

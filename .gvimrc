@@ -1,8 +1,9 @@
 if has("gui_macvim")
-    set guifont=Menlo:h14
+    set guifont=Meslo\ LG\ M\ DZ\ for\ Powerline:h14
 endif
 
-colorscheme vividchalk
+set background=dark
+colorscheme solarized
 
 if has("gui") && has("unix")
     set guioptions-=T  " Remove toolbar
