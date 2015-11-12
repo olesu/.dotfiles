@@ -28,5 +28,7 @@ export MAVEN_OPTS="\
 export LC_ALL=no_NO.UTF-8
 export LANG=no_NO.UTF-8
 
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
 . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
