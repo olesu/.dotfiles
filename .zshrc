@@ -14,7 +14,7 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle joel-porquet/zsh-dircolors-solarized.git
 
-antigen theme robbyrussell
+antigen theme agnoster
 
 antigen apply
 
