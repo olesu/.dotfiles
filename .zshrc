@@ -2,6 +2,7 @@ export PATH="/usr/local/opt/rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:
 
 # Override coreutils commands with the ones from brew here
 [[ -x $(whence gdircolors) ]] && alias dircolors='gdircolors'
+[[ -x $(whence gls) ]] && alias gls='gls --color=auto'
 
 source ~/.antigen/antigen.zsh
 antigen use oh-my-zsh
