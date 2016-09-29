@@ -1,4 +1,7 @@
-export PATH="/usr/local/opt/rbenv/shims:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/opt/rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
+# Override coreutils commands with the ones from brew here
+alias dircolors='gdircolors'
 
 source ~/.antigen/antigen.zsh
 antigen use oh-my-zsh
