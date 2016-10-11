@@ -3,7 +3,7 @@ if has("gui_macvim")
 endif
 
 set background=dark
-colorscheme solarized
+colorscheme tender
 
 if has("gui") && has("unix")
     set guioptions-=T  " Remove toolbar
