@@ -44,7 +44,7 @@ call ClonePluginIfMissing("Dockerfile.vim", "https://github.com/ekalinin/Dockerf
 call ClonePluginIfMissing("vim-options", "git@github.com:olesu/vim-options.git")
 call ClonePluginIfMissing("vim-keymap", "git@github.com:olesu/vim-keymap.git")
 call ClonePluginIfMissing("editorconfig-vim", "https://github.com/editorconfig/editorconfig-vim.git")
-call ClonePluginIfMissing("tender", "https://github.com/jacoborus/tender.vim")
+call ClonePluginIfMissing("tender.vim", "https://github.com/jacoborus/tender.vim")
 call DownloadPathogenIfMissing()
 
 execute pathogen#infect()
