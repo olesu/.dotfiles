@@ -1,7 +1,8 @@
 export PATH="/usr/local/opt/rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 # Override coreutils commands with the ones from brew here
-alias dircolors='gdircolors'
+[[ -x $(whence gdircolors) ]] && alias dircolors='gdircolors'
+[[ -x $(whence gls) ]] && alias gls='gls --color=auto'
 
 source ~/.antigen/antigen.zsh
 antigen use oh-my-zsh
@@ -35,3 +36,5 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
