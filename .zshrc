@@ -15,9 +15,6 @@ antigen bundle vim-interaction
 antigen bundle mvn
 antigen bundle command-not-found
 
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle joel-porquet/zsh-dircolors-solarized.git
-
 antigen theme agnoster
 
 antigen apply
@@ -36,5 +33,9 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
+fpath=(/usr/local/share/zsh-completions $fpath)
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
