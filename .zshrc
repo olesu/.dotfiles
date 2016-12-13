@@ -22,6 +22,15 @@ antigen theme agnoster
 
 antigen apply
 
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fpath=(/usr/local/share/zsh-completions $fpath)
+rm -f ~/.zcompdump; compinit
+chmod go-w '/usr/local/share'
+source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
+source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+
 # User configuration
 export MAVEN_OPTS="\
     -Djava.net.preferIPv4Stack=false\

@@ -49,6 +49,8 @@ call ClonePluginIfMissing("groovy.vim", "https://github.com/vim-scripts/groovy.v
 call ClonePluginIfMissing("gundo.vim", "https://github.com/sjl/gundo.vim.git")
 call ClonePluginIfMissing("ag.vim", "https://github.com/rking/ag.vim.git")
 call ClonePluginIfMissing("ctrlp.vim", "https://github.com/ctrlpvim/ctrlp.vim.git")
+call ClonePluginIfMissing("vim-javascript", "https://github.com/pangloss/vim-javascript.git")
+call ClonePluginIfMissing("vim-jsx", "https://github.com/mxw/vim-jsx.git")
 call DownloadPathogenIfMissing()
 
 execute pathogen#infect()
