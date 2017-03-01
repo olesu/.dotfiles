@@ -48,3 +48,20 @@ source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+###
+#
+###
+stsc() {
+  eval $(cat ~/.vpsrc)
+  echo "{\"uid\":\"${username}\"}" | http --json --auth ${username}:${password} POST https://interndev.vps.no/sts/token
+}
+
+vim() {
+    env -u GIT_DIR -u GIT_WORK_TREE vim $*
+}
+
+mvim() {
+    env -u GIT_DIR -u GIT_WORK_TREE vim $*
+}
+
