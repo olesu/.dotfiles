@@ -52,11 +52,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 ###
 #
 ###
-stsc() {
-  eval $(cat ~/.vpsrc)
-  echo "{\"uid\":\"${username}\"}" | http --json --auth ${username}:${password} POST https://interndev.vps.no/sts/token
-}
-
 vim() {
     env -u GIT_DIR -u GIT_WORK_TREE vim $*
 }
