@@ -28,8 +28,5 @@ source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
-if [ -f "~/.my-shell.zsh" ]
-then
-    source "~/.my-shell.zsh"
-fi
+source "${HOME}/.my-shell.zsh"
 
