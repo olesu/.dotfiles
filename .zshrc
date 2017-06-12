@@ -14,6 +14,8 @@ antigen bundle vi-mode
 antigen bundle vim-interaction
 antigen bundle mvn
 antigen bundle command-not-found
+antigen bundle autojump
+antigen bundle supercrabtree/k
 
 antigen theme agnoster
 
@@ -27,6 +29,6 @@ source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
-
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 source "${HOME}/.my-shell.zsh"
 
